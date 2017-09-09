@@ -1,14 +1,12 @@
 <template>
    <div>
     <slider class="slider" interval="3000" auto-play="true">
-      <div class="frame" v-for="img in imageList">
+      <div @click="go" class="frame" v-for="img in imageList">
         <image class="image" resize="cover" :src="img.src"></image>
       </div>
     </slider>
-    <Product></Product>
   </div>
 </template>
-
 <style scoped>
  .image {
     width: 700px;
@@ -29,8 +27,6 @@
   }
 </style>
 <script>
-  import api from '../APIconfig.js'
-  import Product from './product.vue'
   export default {
     data () {
       return {
@@ -41,13 +37,9 @@
         ]
       }
     },
-    components:[Product],
     created(){
-       console.log(api.data[0].focusPhotoListTemplet)
-      //  api.data[0].focusPhotoListTemplet.forEach(item=>{
-      //    console.log('https:'+item.imageUrl)
-      //    this.imageList.push('https:'+item.imageUrl)
-      //  })
+        console.log('======9090')
+        //console.log(this.$store.state.message)
     },
     methods:{
       go(){

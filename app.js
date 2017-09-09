@@ -1,12 +1,12 @@
-import foo from './src/foo.vue'
+import app from './src/index.vue'
 // import api from './APIconfig.js'
 // import store from './src/stores'
-foo.el = '#root'
-export default new Vue(foo);
+app.el = '#root'
+export default new Vue(app);
 // new Vue({
 //     el: '#root',
 //     store,
-//     render: h => h(foo)
+//     render: h => h(app)
 // });
 //   const data = await http({
 //         url:api.cms,
