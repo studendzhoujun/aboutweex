@@ -1,7 +1,7 @@
 <template>
    <div>
     <slider class="slider" interval="3000" auto-play="true">
-      <div @click="go" class="frame" v-for="img in imageList">
+      <div class="frame" v-for="img in imageList">
         <image class="image" resize="cover" :src="img.src"></image>
       </div>
     </slider>
@@ -33,13 +33,14 @@
         imageList: [
           { src: 'https://gd2.alicdn.com/bao/uploaded/i2/T14H1LFwBcXXXXXXXX_!!0-item_pic.jpg'},
           { src: 'https://gd1.alicdn.com/bao/uploaded/i1/TB1PXJCJFXXXXciXFXXXXXXXXXX_!!0-item_pic.jpg'},
-          { src: 'https://gd3.alicdn.com/bao/uploaded/i3/TB1x6hYLXXXXXazXVXXXXXXXXXX_!!0-item_pic.jpg'}
+          { src: 'https://gd3.alicdn.com/bao/uploaded/i3/TB1x6hYLXXXXXazXVXXXXXXXXXX_!!0-item_pic.jpg'},
+          {src:'//gfs7.gomein.net.cn/T1Y2VvBvD_1RCvBVdK.jpg'}
         ]
       }
     },
     created(){
         console.log('======9090')
-        //console.log(this.$store.state.message)
+        // console.log(this.$store.state.message)
     },
     methods:{
       go(){
