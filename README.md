@@ -1,6 +1,6 @@
-# demoweex
+# aboutweex
 
-> demoweex
+> aboutweex
 
 ## getting start
 
