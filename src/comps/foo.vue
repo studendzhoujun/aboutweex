@@ -9,20 +9,16 @@
 </template>
 <style scoped>
  .image {
-    width: 700px;
-    height: 700px;
+    width: 750px;
+    height: 750px;
   }
   .slider {
-    margin-top: 25px;
-    margin-left: 25px;
-    width: 700px;
-    height: 700px;
-    border-width: 2px;
-    border-style: solid;
+    width: 750px;
+    height: 750px;
   }
   .frame {
-    width: 700px;
-    height: 700px;
+    width: 750px;
+    height: 750px;
     position: relative;
   }
 </style>

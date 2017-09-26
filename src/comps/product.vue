@@ -5,14 +5,13 @@
      <div class="pro1"><text>3</text></div>
   </div>
 </template>
-<style scoped>
-.pro1{
-  width:200px;
-  height: 200px;
-  background-color:#800000;
-}
-.col{
-  color:#800000;
+<style lang="less" scoped>
+.pro{
+  .pro1{
+    width:200px;
+    height: 200px;
+    background-color:#656458;
+  }
 }
 </style>
 <script>

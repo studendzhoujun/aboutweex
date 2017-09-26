@@ -59,6 +59,9 @@ function getBaseConfig () {
         }, {
           test: /\.vue(\?[^?]+)?$/,
           loaders: []
+        },{
+          test: /\.less$/,
+          loaders: ['less-loader']
         }
       ]
     },
