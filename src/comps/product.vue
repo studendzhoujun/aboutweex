@@ -34,11 +34,6 @@
     },
     methods:{
       go(index){
-        var modal=weex.requireModule('modal')
-        modal.toast({
-          message:'i am a toast',
-          duration:1
-        })
         this.datalist.forEach(item=>{
          for(var i=0;i<item.clist.length;i++){
            if(item.clist[i]=='active'){
