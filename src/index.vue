@@ -10,11 +10,12 @@
   export default {
     data () {
       return {
+    
       }
     },
     components:{
         top,
-        product
+        product,
     }
   }
 </script>
