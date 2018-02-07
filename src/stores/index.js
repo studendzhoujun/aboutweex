@@ -2,7 +2,7 @@
  * @Author: zhouJun 
  * @Date: 2017-08-25 15:12:47 
  * @Last Modified by: zhouJun
- * @Last Modified time: 2017-12-26 16:35:58
+ * @Last Modified time: 2018-02-07 11:21:11
  */
 
 import Vuex from 'vuex'
@@ -30,12 +30,11 @@ export default new Vuex.Store({
                 // url:'https://api.douban.com/v2/movie/in_theaters'
                }).then(data=>{
                  console.log(data)
-                 modal.toast({
-                   message:data,
-                   duration:2
-                 })
+                //  modal.toast({
+                //    message:data,
+                //    duration:2
+                //  })
                })
-            console.log('hhhhhhhhhhhh')
         },
     }
 });

@@ -1,6 +1,6 @@
 <template>
   <div class="pro">
-     <div @click="go(index)" v-for="(item,index) in datalist" :class="item.clist"><text>{{item.text}}</text></div>
+     <div @click="go(index)" v-for="(item,index) in datalist" :class="['pro1',isindex==index?'active':'']"><text>{{item.text}}</text></div>
   </div>
 </template>
 <style scoped>
@@ -10,12 +10,14 @@
 }
 .pro1{
     height: 200px;
-    background-color:#090;
+    background-color:#091231;
     flex-direction: row;
     flex:1;
+    justify-content:center;
+    align-items:center;
 }
 .active{
-    background-color:#423233;
+    background-color:#323444;
 }
 </style>
 <script>
@@ -23,25 +25,18 @@
     data () {
       return {
          shouldFixed:true,
-         clist:['pro1'],
+         isindex:0,
          datalist:[
-           {clist:['pro1'],text:'a'},
-           {clist:['pro1'],text:'b'},
-           {clist:['pro1'],text:'c'},
-           {clist:['pro1'],text:'d'}
+           {text:'R'},
+           {text:'D'},
+           {text:'T'},
+           {text:'G'}
          ]
       }
     },
     methods:{
       go(index){
-        this.datalist.forEach(item=>{
-         for(var i=0;i<item.clist.length;i++){
-           if(item.clist[i]=='active'){
-             item.clist=['pro1']
-           }
-         }
-        })
-        this.datalist[index].clist.push('active')
+       this.isindex=index
       }
     }
   }
