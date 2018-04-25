@@ -35,7 +35,7 @@
       }
     },
     created(){
-        console.log('======9090')
+        console.log('======3333')
         // console.log(this.$store.state.message)
     },
     methods:{

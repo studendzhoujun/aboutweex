@@ -2,7 +2,7 @@
  * @Author: zhouJun 
  * @Date: 2017-08-25 15:12:47 
  * @Last Modified by: zhouJun
- * @Last Modified time: 2018-02-07 11:21:11
+ * @Last Modified time: 2018-04-25 15:55:27
  */
 
 import Vuex from 'vuex'
@@ -26,14 +26,14 @@ export default new Vuex.Store({
             // commit('init',data)
             const modal = weex.requireModule('modal')
             http({
-                 url:'https://api.github.com/repos/alibaba/weex',
-                // url:'https://api.douban.com/v2/movie/in_theaters'
+                 //url:'https://api.github.com/repos/alibaba/weex',
+                url:'/api/hello'
                }).then(data=>{
                  console.log(data)
-                //  modal.toast({
-                //    message:data,
-                //    duration:2
-                //  })
+                 modal.toast({
+                   message:data.data.message+' zz',
+                   duration:2
+                 })
                })
         },
     }

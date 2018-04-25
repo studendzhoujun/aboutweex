@@ -16,15 +16,15 @@ var bannerPlugin = new webpack.BannerPlugin(
   { raw: true }
 )
 
-// var publicPath = 'http://localhost:8080/'
+var publicPath = '/'
 function getBaseConfig () {
   return {
     entry: {
       app: path.resolve('./src/app.js')
     },
     output: {
-      path: 'dist',
-      // publicPath:publicPath
+      path: path.resolve(__dirname, '../dist'),
+      publicPath:publicPath
     },
     module: {
       // // You can use ESLint now!
