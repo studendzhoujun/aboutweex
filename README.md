@@ -34,6 +34,9 @@ npm run serve
 
 # start weex-devtool for debugging with native
 npm run debug
+
+# test
+npm test
 ```
 
 ## notes
