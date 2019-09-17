@@ -45,8 +45,8 @@ npm test1
 npm test2
 ```
 
-# test1
-npm test1
+# test12
+npm test12
 ```
 
 ## notes
