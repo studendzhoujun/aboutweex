@@ -38,6 +38,12 @@ npm run debug
 # test
 npm test
 ```
+# test1
+npm test1
+```
+# test2
+npm test2
+```
 
 ## notes
 
