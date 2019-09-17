@@ -49,6 +49,10 @@ npm test2
 npm test123
 ```
 
+# test1
+npm test1
+```
+
 ## notes
 
 You can config more babel, ESLint and PostCSS plugins in `webpack.config.js`.
